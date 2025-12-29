@@ -1,32 +1,133 @@
-# About my model 
+ ## Project Overview
+________________________
+> This project focuses on predicting Sales
+> based on different advertising channels
+> such as TV, Radio, and Social Media.
+> Multiple regression-based machine learning 
+> models are implemented and compared to
+> identify the best-performing model
 
-in this model .. i predicted  how much sales can be taken place 
-i got 0.99 r^2 score  accuracy by 3 techniques 
-random forest  and polynomial performed best 
+##  Dataset Description
+_______________________________
+> **Dataset Link** : 
+> Dataset: Dummy Advertising and Sales Data
+> Total Records: 4572
+ 
+> **Features**:
+
+- TV – Advertising budget on TV
+- Radio – Advertising budget on Radio
+- Social Media – Advertising budget on Social Media
+- Influencer – Type of influencer (Mega, Macro, Micro, Nano)
+- Sales – Target variable (Sales)
+- 
+##  Data Preprocessing
+_________________________
+
+**Missing Value Treatment**
+> Missing values in TV, Radio, Social Media, and Sales 
+> were handled using random value imputation
+> from existing data distributions.
+
+
+**Outlier Detection & Handling**
+> Boxplots were used to detect outliers.
+> Social Media column contained significant outliers.
+> Outliers were handled using IQR-based
+> capping to reduce their impact.
+
+
+**Feature Selection**
+> Influencer column was removed for regression models.
+> REASON :
+ 
+    The Main reason why i removed influencer 
+    because is has minimal corelation with sales data
+    and hence it may create noise while training
+    
+>  Final input features:
+- TV
+- Radio
+- Social Media
+
+ 
+**Exploratory Data Analysis**
+- Boxplots used to analyze feature distributions.
+- Scatter plots used to observe relationships between advertising channels and sales.
+- Sales showed a strong positive relationship with TV advertising.
+
+## Models Implemented
+___________________________________
+
+### 1️. Linear Regression
+
+> Features scaled using StandardScaler
+ 
+> **Performance:**
+ 
+_ **R² Score:**  = **0.98**
+_ **MSE:**  =     **154**
+
+### 2️. Random Forest Regressor
+
+**Hyperparameter tuning using GridSearchCV**
+
+> Best n_estimators: 50
+ 
+> **Performance:**
+
+**R² Score:** = **0.9967**
+**MSE: = 28.5**
+
+### Polynomial Regression (Degree = 3)
+
+> Polynomial feature expansion applied
+
+> **Performance:**
+> **R² Score: ~0.9966**
+> **MSE: ~28.7**
+
+### XGBoost Regressor
+
+> Hyperparameter tuning using GridSearchCV
+
+**Best n_estimators** : **50**
+
+> **Performance:**
+**R² Score:** =  **0.9937**
+**MSE:** =       **52.2**
+
+## Model Comparison Summary
+_________________________________
+Model	R² Score	MSE
+Linear Regression	~0.98	~154
+Random Forest	~0.9967	~28.5
+Polynomial Regression	~0.9966	~28.7
+XGBoost	~0.9937	~52.2
+
+✅ Random Forest Regressor performed best overall.
+
+## ⚙️ Installation and Usage
+_______________________________
+
+> Follow the steps below to set up the project locally:
+ 
+> - **1️. Clone the Repository**
+ 
+    git clone https://github.com/your-username/advertising-sales-prediction.git
+    cd advertising-sales-prediction
+   
+> - **2 Create Virtual Environment**
+ 
+    python -m venv venv
+    source venv/bin/activate # For Linux / Mac
+    venv\Scripts\activate    # For Windows
+   
+> - **3️ Install Required Libraries**
+
+     pip install numpy pandas matplotlib
+     seaborn scikit-learn statsmodels xgboost
 
 
 
- # About performance of my model 
-
- 1. linear regression  , r^2 score = 0.98 , mean square error = 154
- 2. polynomial regression  , r^2 score = 0.9966 , mean sqaure error = 28.75
- 3. Random forest ,  r^2 score = 0.9967 , mean score error = 28.52
- 4. xg boost ,  r^2 score = 0.9937 , mean score error = 52.24
-
-
-#   process of making my model 
-
- in my original dataset quite much  misisng values  were present
- so i imputed missing values by the use of randomness technique 
-
- outliers too were in sales feature.. so i removed outliers
- carefully by the use of capping logic
-
- by corr function its tell us the efficiency of the features
- so i removed influencer column beacause it was irrelevent features...
-
- sacled my input features
- did train test and amke my model by 4 diffrent techniques
-
-# plss check my model .
-
+  
