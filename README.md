@@ -24,14 +24,12 @@ _______________________________
 _________________________
 
 **1. Missing Value Treatment**
-_________________________________
 > Missing values in TV, Radio, Social Media, and Sales 
 > were handled using random value imputation
 > from existing data distributions.
 
 
 **2. Outlier Detection & Handling**
-_____________________________________
 > Boxplots were used to detect outliers.
 > Social Media column contained significant outliers.
 > Outliers were handled using IQR-based
@@ -39,7 +37,6 @@ _____________________________________
 
 
 **3. Feature Selection**
-____________________________
 > Influencer column was removed for regression models.
 > REASON :
  
@@ -54,7 +51,6 @@ ____________________________
 
  
 **4. Exploratory Data Analysis**
-________________________________
 - Boxplots used to analyze feature distributions.
 - Scatter plots used to observe relationships between advertising channels and sales.
 - Sales showed a strong positive relationship with TV advertising.
