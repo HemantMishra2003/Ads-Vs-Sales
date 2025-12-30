@@ -35,7 +35,9 @@ _________________________
 > Outliers were handled using IQR-based
 > capping to reduce their impact.
 ### Outliers of Social Media Ads
-![Outliers of Social Media Ads](assets/outliers%20of%20SocialMedia.jpeg)
+### Outlier of Sales
+![Outlier of Sales](assets/Outlier_of_Sales.jpeg)
+
 
 
 **3. Feature Selection**
