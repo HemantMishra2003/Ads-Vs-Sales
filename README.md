@@ -34,7 +34,9 @@ _________________________
 > Social Media column contained significant outliers.
 > Outliers were handled using IQR-based
 > capping to reduce their impact.
-![outliers of SocialMedia Ads](Assets/outliers_of_SocialMedia.jpeg)
+### Outliers of Social Media Ads
+![Outliers of Social Media Ads](assets/outliers%20of%20SocialMedia.jpeg)
+
 
 **3. Feature Selection**
 > Influencer column was removed for regression models.
