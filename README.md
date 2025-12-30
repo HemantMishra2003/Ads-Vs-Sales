@@ -36,7 +36,8 @@ _________________________
 > capping to reduce their impact.
 ### Outliers of Social Media Ads
 ### Outlier of Sales
-![Outlier of Sales](assets/Outlier_of_Sales.jpeg)
+
+![Outlier of Sales](Assets/Outlier_of_Sales.jpeg)
 
 
 
