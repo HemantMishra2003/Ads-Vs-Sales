@@ -101,11 +101,39 @@ ___________________________________
 
 ## Model Comparison Summary
 _________________________________
-Model	R² Score	MSE
-Linear Regression	~0.98	~154
-Random Forest	~0.9967	~28.5
-Polynomial Regression	~0.9966	~28.7
-XGBoost	~0.9937	~52.2
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>R² Score</th>
+      <th>MSE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Linear Regression</td>
+      <td>~0.98</td>
+      <td>~154</td>
+    </tr>
+    <tr>
+      <td><b>Random Forest</b></td>
+      <td><b>~0.9967</b></td>
+      <td><b>~28.5</b></td>
+    </tr>
+    <tr>
+      <td>Polynomial Regression</td>
+      <td>~0.9966</td>
+      <td>~28.7</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>~0.9937</td>
+      <td>~52.2</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ✅ Random Forest Regressor performed best overall.
 
