@@ -10,12 +10,10 @@ ________________________
 
 ##  Dataset Description
 _______________________________
-> **Dataset Link** : 
 > Dataset: Dummy Advertising and Sales Data
 > Total Records: 4572
  
 > **Features**:
-
 - TV – Advertising budget on TV
 - Radio – Advertising budget on Radio
 - Social Media – Advertising budget on Social Media
