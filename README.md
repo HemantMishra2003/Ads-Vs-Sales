@@ -19,17 +19,19 @@ _______________________________
 - Social Media – Advertising budget on Social Media
 - Influencer – Type of influencer (Mega, Macro, Micro, Nano)
 - Sales – Target variable (Sales)
-- 
+ 
 ##  Data Preprocessing
 _________________________
 
 **Missing Value Treatment**
+_________________________________
 > Missing values in TV, Radio, Social Media, and Sales 
 > were handled using random value imputation
 > from existing data distributions.
 
 
 **Outlier Detection & Handling**
+_____________________________________
 > Boxplots were used to detect outliers.
 > Social Media column contained significant outliers.
 > Outliers were handled using IQR-based
@@ -37,6 +39,7 @@ _________________________
 
 
 **Feature Selection**
+____________________________
 > Influencer column was removed for regression models.
 > REASON :
  
@@ -45,56 +48,55 @@ _________________________
     and hence it may create noise while training
     
 >  Final input features:
-- TV
-- Radio
-- Social Media
+ - TV
+ - Radio
+ - Social Media
 
  
 **Exploratory Data Analysis**
+________________________________
 - Boxplots used to analyze feature distributions.
 - Scatter plots used to observe relationships between advertising channels and sales.
 - Sales showed a strong positive relationship with TV advertising.
 
-## Models Implemented
+# Models Implemented
 ___________________________________
 
-### 1️. Linear Regression
+## **1️. Linear Regression**
 
 > Features scaled using StandardScaler
  
 > **Performance:**
- 
-_ **R² Score:**  = **0.98**
-_ **MSE:**  =     **154**
+- **R² Score:** = **0.98**
+- **MSE:**      = **154**
 
-### 2️. Random Forest Regressor
+
+## **2️. Random Forest Regressor**
 
 **Hyperparameter tuning using GridSearchCV**
+- > Best n_estimators: 50
+- > **Performance:**
 
-> Best n_estimators: 50
- 
-> **Performance:**
+- **R² Score:** = **0.9967**
+- **MSE: = 28.5**
 
-**R² Score:** = **0.9967**
-**MSE: = 28.5**
 
-### Polynomial Regression (Degree = 3)
+## Polynomial Regression (Degree = 3)
 
 > Polynomial feature expansion applied
 
 > **Performance:**
-> **R² Score: ~0.9966**
-> **MSE: ~28.7**
+- **R² Score: ~0.9966**
+- **MSE: ~28.7**
 
-### XGBoost Regressor
+
+## XGBoost Regressor
 
 > Hyperparameter tuning using GridSearchCV
-
 **Best n_estimators** : **50**
-
 > **Performance:**
-**R² Score:** =  **0.9937**
-**MSE:** =       **52.2**
+- **R² Score:** =  **0.9937**
+- **MSE:** =       **52.2**
 
 ## Model Comparison Summary
 _________________________________
