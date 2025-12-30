@@ -37,7 +37,7 @@ _________________________
 ### Outliers of Social Media Ads
 ### Outlier of Sales
 
-![Outlier of Sales](Assets/Outlier_of_Sales.jpeg)
+![Outlier of Advertisement](Assets/Outlier_of_Sales.jpeg)
 
 
 
